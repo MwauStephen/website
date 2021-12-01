@@ -61,9 +61,13 @@ RESUABLE  CODE
   height: 9.6rem;
 }
 .logo-img {
-  height: 3.2rem;
-  width: 3.2rem;
-  border-radius: 50%;
+  height: 8.2rem;
+  transition: all 0.4s;
+  /* width: 3.2rem;
+  border-radius: 50%; */
+}
+.logo-img:hover {
+  height: 9.2rem;
 }
 .main-nav {
 }
