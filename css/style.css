@@ -93,7 +93,6 @@ RESUABLE  CODE
   max-width: 140rem;
   margin: 0 auto;
   padding: 0 3.2rem;
- 
 }
 .hero-text {
 }
@@ -137,8 +136,54 @@ RESUABLE  CODE
   background: #286657;
   color: #fff;
 }
-.hero-img {
+/* .hero-img {
   background-image: url("../img/hero/753.jpg");
   background-size: cover;
   background-position: center;
+} */
+.hero-container {
+  position: relative;
+}
+.hero-img {
+  position: fixed;
+  height: 250px;
+}
+/*------img one---------*/
+.hero-img-one {
+  transform: translateY(112px) translateX(49px) scale(1);
+  z-index: 20;
+  transition: all 0.4s;
+  outline: 2px solid rgb(23, 0, 128);
+  outline-offset: 1.5rem;
+}
+.hero-img-one:hover {
+  z-index: 20;
+  outline: 2px solid #7ed56f;
+  transform: translateY(112px) translateX(49px) scale(0.9);
+}
+
+/*------img two---------*/
+.hero-img-two {
+  transform: translateY(2px) translateX(92px) scale(0.9);
+  z-index: 15;
+  transition: all 0.4s;
+  outline-offset: 1.5rem;
+}
+.hero-img-two:hover {
+  outline: 2px solid #7ed56f;
+  z-index: 25;
+  transform: translateY(2px) translateX(92px) scale(1);
+}
+
+/*------img three---------*/
+.hero-img-three {
+  transform: translateY(258px) translateX(7px) scale(0.9);
+  z-index: 10;
+  transition: all 0.4s;
+  outline-offset: 1.5rem;
+}
+.hero-img-three:hover {
+  z-index: 25;
+  outline: 2px solid #7ed56f;
+  transform: translateY(258px) translateX(7px) scale(1);
 }
