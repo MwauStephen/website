@@ -393,7 +393,8 @@ CTA SECTION
   grid-template-columns: 2fr 1fr;
   border-radius: 11px;
   overflow: hidden;
-  box-shadow: 0 2.4rem 4.8rem #64ffda;
+  /* box-shadow: 0 2.4rem 4.8rem #64ffda; */
+  box-shadow: 1.2rem 1.2rem 2.4rem #000;
 }
 .cta-text {
   font-size: 1.8rem;
@@ -443,6 +444,7 @@ CTA SECTION
   padding: 1.2rem;
   border-radius: 9px;
   font-size: 1.8rem;
+  font-weight: 600;
   background: #fff;
   background: #64ffda;
   color: #333333;
