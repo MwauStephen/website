@@ -48,6 +48,9 @@ RESUABLE  CODE
 .grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
+.grid--center-v {
+  align-items: center;
+}
 .margin-bottom-sm {
   margin-bottom: 2.4rem;
 }
@@ -367,20 +370,44 @@ HERO SECTION
 /* ******************************************* *
  PROJECT SECTION
 ***********************************************/
-/* .section-projects {
-  padding: 9.6rem 0; */
-/* .hero-img {
-  background-image: url("../img/hero/753.jpg");
-  background-size: cover;
-  background-position: center;
-} */
-/* .hero-container {
-  position: relative;
+.section-projects {
+  padding: 9.6rem 0;
 }
-.hero-img {
-  position: fixed;
-  height: 250px;
+
+.project-text-box {
+  align-items: center;
 }
+.project-number {
+  font-size: 9.8rem;
+  font-weight: 700;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.project-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  color: #64ffda;
+}
+.project-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #fff;
+}
+.project-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-img img {
+  width: 100%;
+  border-radius: 11px;
+  transition: all 0.3s;
+}
+.project-img img:hover {
+  transform: scale(1.2);
+}
+
 /* ******************************************* *
 CTA SECTION
 ***********************************************/
