@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="logo/stephen white logo.png" />
 
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@400;500;700;900&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/query.css" />
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -21,12 +23,16 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <title>Stephen-Mwau</title>
   </head>
   <body>
     <!-- hero section -->
     <header class="header">
-      <a href="index.html">
+      <a href="#">
         <img
           src="stv logo/stephen white transparent logo.png"
           alt="Logo for my website"
@@ -37,9 +43,9 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link">Home</a></li>
-          <li><a href="#" class="main-nav-link">About me</a></li>
-          <li><a href="#" class="main-nav-link">Services</a></li>
-          <li><a href="#" class="main-nav-link">Contact me</a></li>
+          <li><a href="#about" class="main-nav-link">About me</a></li>
+          <li><a href="#services" class="main-nav-link">Services</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact me</a></li>
         </ul>
       </nav>
     </header>
@@ -55,14 +61,20 @@
               designing) exceptional digital experiences. Currently, I’m focused
               on building accessible, human-centered products at Upstatement.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
-              >Check out my work!</a
-            >
+            <a href="#" class="btn btn--full margin-right-sm">Check my work!</a>
             <a href="#" class="btn btn--outline">Learn more!</a>
           </div>
           <div class="hero-container">
-            <img src="img/hero/742.JPG" alt="" class="hero-img hero-img-one" />
-            <img src="img/hero/750.jpg" alt="" class="hero-img hero-img-two" />
+            <img
+              src="img/hero/742.JPG"
+              alt="a web development photo"
+              class="hero-img hero-img-one"
+            />
+            <img
+              src="img/hero/750.jpg"
+              alt=" person using a phone to access the web"
+              class="hero-img hero-img-two"
+            />
             <!-- <img
               src="img/hero/753.jpg"
               alt=""
@@ -79,7 +91,7 @@
       </section>
       <section class="section-featured">
         <div class="container">
-          <h2 class="heading-feature">As Featured In</h2>
+          <h2 class="heading-feature">In Patnership</h2>
           <div class="featured-logos">
             <img
               src="logo/business-insider.png"
@@ -105,7 +117,7 @@
         </div>
       </section>
 
-      <section class="section-about">
+      <section class="section-about" id="about">
         <div class="container">
           <h2 class="secondary-heading secondary-heading-line">About me</h2>
         </div>
@@ -113,7 +125,7 @@
           <div class="about-img">
             <img
               src="img/hero/daniel-sessler--5xPlN5-jfc-unsplash.jpg"
-              alt="photo of me"
+              alt="photo of stephen"
               class="photo-img"
             />
           </div>
@@ -190,7 +202,7 @@
         </div>
       </section>
 
-      <section class="section-services">
+      <section class="section-services" id="services">
         <div class="container">
           <h2 class="secondary-heading secondary-heading-line">Services</h2>
         </div>
@@ -252,7 +264,7 @@
         >
       </div>
 
-      <section class="section-projects">
+      <section class="section-projects" id="projects">
         <div class="container">
           <h2 class="secondary-heading secondary-heading-line">Projects</h2>
         </div>
@@ -313,7 +325,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="contact">
         <div class="container">
           <div class="cta">
             <div class="cta-text">
