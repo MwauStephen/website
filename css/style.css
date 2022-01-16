@@ -151,7 +151,7 @@ HERO SECTION
   display: inline-block;
 }
 .hero-description {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1.8;
   color: #bbbaba;
   letter-spacing: 0.75px;
@@ -568,4 +568,11 @@ CTA SECTION
   position: absolute;
   padding: 2rem;
   right: 0;
+}
+
+/* Mobile Navigation */
+.btn-mobile-nav {
+  
+}
+.icon-mobile-nav {
 }
