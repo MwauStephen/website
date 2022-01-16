@@ -21,6 +21,7 @@ CTA:
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -91,6 +92,7 @@ RESUABLE  CODE
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* gap: 120rem; */
   padding: 0 4.8rem;
   height: 9.6rem;
 }
