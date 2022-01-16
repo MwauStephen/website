@@ -17,5 +17,20 @@ allLinks.forEach(function (link) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
+    // close mobile naviagtion
+    if (link.classList.contains("main-nav-link"))
+      headerEl.classList.toggle("nav-open");
   });
 });
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector("header");
+
+// add a mouse event on the btnNavEl
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+
+// making navigation
+const sectionHeroEl=document.querySelector
