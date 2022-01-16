@@ -153,7 +153,11 @@ eg 1344px/16= 84em
   }
   .project-img img {
     align-self: end;
-    width: 95%;
+    width: 85%;
+  }
+
+  .project-img img:hover {
+    transform: scale(1.05);
   }
   .project-img:nth-child(2) {
     grid-row: 1;
@@ -172,6 +176,58 @@ eg 1344px/16= 84em
   }
   .cta-img-box {
     width: 145%;
+  }
+
+  /* mobile naviagation */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.97);
+    /* background: #092349ec; */
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* creates a slide in animation on the nav list */
+    transform: translateX(100%);
+    transition: all 0.5s ease-in;
+
+    /* hides the nav visually */
+    opacity: 0;
+
+    pointer-events: none;
+
+    /* 3 Hide from screen readers */
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0%);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* display the nav list in a column */
+  .main-nav-list {
+    flex-direction: column;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+    color: #000;
   }
 
   /* @media (max-width: 59em) {
