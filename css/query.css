@@ -103,53 +103,124 @@ eg 1344px/16= 84em
 /* ************************* */
 /* Below 944px for  tablets*/
 /* ************************* */
-html {
-  /* 1rem=8px=(8px/16=0.5*100=50%) */
-  font-size: 50%;
-}
-.hero {
-  grid-template-columns: 1fr;
-}
-.hero-text {
-  text-align: center;
-}
-.hero-container {
-  text-align: center;
-}
-.hero-img {
-  width: 60%;
-}
-.featured-logo {
-  height: 2.8rem;
-}
-.description-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-.service {
-  width: 100%;
-}
-.service-text {
-  font-size: 1.5rem;
-  line-height: 1.5;
-}
-.project-number {
-  font-size: 9.6rem;
-}
-.project-text {
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-.project-img img {
-  align-self: end;
-  width: 95%;
-}
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-container {
+    text-align: center;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  .featured-logo {
+    height: 2.8rem;
+  }
+  .description-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .about-img {
+    text-align: center;
+  }
+  .service {
+    width: 50%;
+    justify-self: center;
+  }
+  .service-img {
+    width: 100%;
+  }
+  .service-text {
+    font-size: 2.4rem;
+    line-height: 1.8;
+  }
+  .photo-img {
+    width: 60%;
+    align-self: center;
+  }
+  .project-number {
+    font-size: 9.6rem;
+  }
+  .project-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .project-img img {
+    align-self: end;
+    width: 95%;
+  }
+  .project-img:nth-child(2) {
+    grid-row: 1;
+  }
+  .project-img:nth-child(6) {
+    grid-row: 5;
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .cta-btn {
+    margin-top: 2rem;
+  }
+  .cta-img-box {
+    width: 145%;
+  }
 
+  /* @media (max-width: 59em) {
+  html {
+    1rem=8px=(8px/16=0.5*100=50%)
+    font-size: 50%;
+  } */
+
+  /* .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  
+  
+  .hero-img {
+    width: 60%;
+  }
+  .featured-logo {
+    height: 2.8rem;
+  }
+  .description-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .service {
+    width: 100%;
+  }
+  .service-text {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .project-number {
+    font-size: 9.6rem;
+  }
+  .project-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .project-img img {
+    align-self: end;
+    width: 95%;
+  } */
+}
 /* ************************* */
 /* Below 704px for  smaller tablets*/
 /* ************************* */
 @media (max-width: 704) {
-  
   .project-img img {
     width: 100%;
   }
