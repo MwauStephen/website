@@ -1,5 +1,3 @@
-console.log("hello stephen");
-console.log("welocme to javascript i hope you like it");
 // making smooth scrolling animation
 const allLinks = document.querySelectorAll("a:link");
 // console.log(allLinks);
@@ -31,6 +29,25 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-
 // making navigation
-const sectionHeroEl=document.querySelector
+const sectionHeroEl = document.querySelector(".hero-section");
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    console.log(ent);
+
+    if (ent.isIntersecting == false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting == true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // in the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHeroEl);
