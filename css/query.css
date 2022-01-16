@@ -181,12 +181,14 @@ eg 1344px/16= 84em
   /* mobile naviagation */
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
   .main-nav {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, 0.97);
+    background: rgba(255, 255, 255, 0.9);
+    /* background: rgba(255, 0, 0, 0.986); */
     /* background: #092349ec; */
     width: 100%;
     height: 100vh;
@@ -207,11 +209,14 @@ eg 1344px/16= 84em
     /* 3 Hide from screen readers */
     visibility: hidden;
   }
+  .main-nav {
+  }
   .nav-open .main-nav {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
     transform: translateX(0%);
+    pointer-events: auto;
+    z-index: 1000;
   }
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
