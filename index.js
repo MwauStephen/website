@@ -1,4 +1,5 @@
 // making smooth scrolling animation
+
 const allLinks = document.querySelectorAll("a:link");
 // console.log(allLinks);
 allLinks.forEach(function (link) {
@@ -6,6 +7,7 @@ allLinks.forEach(function (link) {
     e.preventDefault();
     const href = link.getAttribute("href");
 
+    // scrolling to top
     if (href == "#")
       window.scrollTo({
         top: 0,
@@ -29,12 +31,12 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-// making navigation
+// // making navigation
 const sectionHeroEl = document.querySelector(".hero-section");
 const obs = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
-    console.log(ent);
+    // console.log(ent);
 
     if (ent.isIntersecting == false) {
       document.body.classList.add("sticky");
@@ -44,7 +46,7 @@ const obs = new IntersectionObserver(
     }
   },
   {
-    // in the viewport
+    //   // in the viewport
     root: null,
     threshold: 0,
     rootMargin: "-80px",
